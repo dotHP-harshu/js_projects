@@ -1,6 +1,6 @@
 /* Main adjustment */
 main {
-    height: auto;
+    height: 105vh;
 }
 
 header img {
@@ -26,15 +26,23 @@ header img {
     font-size: 2rem;
 }
 
+.card-container {
+    padding: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 #load-btn {
     height: 35px;
 }
 
 /* Project section adjustment */
 /* Card  adjustment */
+
 .cards {
-    width: 325px;
-    height: 192px;
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    height: 180px;
 }
 
 .card-content h3 {
@@ -50,4 +58,10 @@ header img {
 
 .pop-up-btn {
     margin: 1em;
+}
+
+@media (max-width:320px) {
+    main {
+        height: 125vh;
+    }
 }

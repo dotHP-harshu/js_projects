@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    transition: all 0.5s;
+}
+
+main button {
+    padding: 0.5em 1em;
+    margin: 0 1em;
+    font-weight: bold;
+    font-family: arial;
+    background-color: white;
+    cursor: pointer;
+}
+
+#copy-btn {
+    transition: all 0.5s;
+}

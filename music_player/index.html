@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Created by - Harsh Prajapati -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player | Harsh Prajapati </title>
+
+    <!-- CSS links-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <audio id="audio" src="media/song-1.m4a" onended="loadNextAudio()" ontimeupdate="progress()"></audio>
+    <div class="container">
+        <div id="player">
+            <h2>Music Player</h2>
+
+            <div id="music-detail">
+                <div class="music-name music-detail">
+                    <p>Music Name</p>
+                </div>
+                <div class="music-img music-detail">
+                    <img src="media/img/img-3.jpg">
+                </div>
+                <div class="music-artist music-detail">
+                    <p title="Artist">Music artist </p>
+                </div>
+                <div class="music-album music-detail">
+                    <p title="Album">Music album </p>
+                </div>
+            </div>
+            <div id="progress">
+                <div class=" progress-bar">
+                    <input type="range" min="0" max="100" value="0" onchange="jumpTime()">
+                </div>
+
+            </div>
+
+            <div id="actions">
+                <div title="Previous" class="action prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 2v20h-2v-20h2zm18 0l-16 10 16 10v-20z"/></svg>
+                </div>
+                <div title="Play" class="action play-pause" onclick="playAudio()">
+                    <svg class="play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                    <svg class="pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 24h-6v-24h6v24zm10-24h-6v24h6v-24z"/></svg>
+                </div>
+                <div title="Next" class="action next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 22v-20h2v20h-2zm-18 0l16-10-16-10v20z"/></svg>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JS links -->
+    <script src="js/songs.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

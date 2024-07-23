@@ -1,0 +1,190 @@
+:root {
+    --primary-color: #003049;
+    --secondary-color: #669bbc;
+    --universal: rgba(255, 255, 255, 0.5);
+}
+
+@font-face {
+    font-family: kanit;
+    src: url(../assets/fonts/Kanit-Regular.ttf);
+}
+
+@font-face {
+    font-family: exo;
+    src: url(../assets/fonts/Exo2-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player {
+    width: max(30vw, 400px);
+    min-height: min(80vh, 620px);
+    border-radius: 11px;
+    background: linear-gradient(145deg, #00334e, #002b42);
+    box-shadow: 35px 35px 70px #001e2d, -35px -35px 70px #004265;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+#player h2 {
+    font-family: kanit;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#music-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.music-detail {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.music-detail p {
+    font-family: exo;
+}
+
+.music-name p {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.music-artist {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.music-album p {
+    font-size: 1rem;
+}
+
+.music-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.music-img img {
+    height: 100%;
+}
+
+#actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.action {
+    border: 1.5px solid var(--universal);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.action:hover,
+.action:focus {
+    background-color: var(--universal);
+}
+
+.action svg {
+    fill: var(--universal);
+    height: 20px;
+    width: 20px;
+}
+
+.action:hover svg,
+.action:focus svg {
+    fill: var(--primary-color);
+}
+
+.pause {
+    display: none;
+}
+
+#progress {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.time {
+    font: 14px exo;
+}
+
+.total {
+    float: right;
+}
+
+.current {
+    float: left;
+}
+
+.progress-bar input {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10000px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.progress-bar input::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: var(--primary-color);
+    box-shadow: -205px 0 0 200px var(--primary-color);
+}
+
+.play-animation {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

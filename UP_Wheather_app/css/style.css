@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../bg.avif') no-repeat center center/cover;
+    font-family: ms sans serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #B4A6AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    width: 400px;
+    min-height: 50vh;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.container h2 {
+    display: inline;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+form select,
+form button {
+    padding: 5px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+form select {
+    width: 50%;
+    border: 1px solid #615055;
+}
+
+form button {
+    background-color: #615055;
+    color: white;
+    width: 100px;
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.data p,
+.data h6 {
+    margin: 5px 0;
+}
+
+.data h6 {
+    font-size: 2rem;
+}

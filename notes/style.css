@@ -1,0 +1,69 @@
+:root {
+  --main: #fcad35;
+  --dark: #333333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#add-btn {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  background-color: var(--dark);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: ms sans serif;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+#add-btn:hover {
+  background-color: #505050;
+}
+
+#container {
+  width: 100vw;
+  min-height: 100vh; /* This will set initial height 100vh and if height increse then it will increase the height from 100vh*/
+  background-color: var(--main);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.note {
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  margin: 50px;
+}
+.tool {
+  display: block;
+  width: 100%;
+  background-color: var(--dark);
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+.tool i {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+textarea {
+  background-color: inherit;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 10px;
+}
+textarea:focus {
+  border: none;
+  outline: none;
+}

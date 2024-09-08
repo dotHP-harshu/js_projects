@@ -1,0 +1,91 @@
+:root {
+    --main: #F84934;
+    --main-first: #FF8755;
+    --main-second: #fddfd3;
+}
+
+@font-face {
+    font-family: hp;
+    src: url('../fonts/ANGEL___.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main h3 {
+    color: var(--main);
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 5em;
+    font-family: cursive;
+}
+
+.box {
+    width: 100vmin;
+    height: auto;
+    background-color: white;
+    padding: 15px;
+}
+
+#item::placeholder {
+    color: var(--main-first);
+    font-family: Miriam Libre;
+}
+
+#item {
+    box-shadow: 0 0 3px var(--main-first);
+    background-color: white;
+    color: var(--main-first);
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    outline: 0;
+}
+
+#to-do-box {
+    margin: 5px 0;
+}
+
+#to-do-box li {
+    padding: 2px 10px;
+    background-color: var(--main-first);
+    color: white;
+    font-family: Alkatra;
+    border-radius: 5px;
+    text-align: justify;
+    position: relative;
+    padding-right: 20px;
+    margin-top: 10px;
+    list-style-type: none;
+    user-select: none;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+#to-do-box li i {
+    font-weight: bold;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}

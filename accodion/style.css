@@ -1,0 +1,99 @@
+:root {
+    --main-color: #A60053;
+    --shade-color: #C14D87;
+    --light-shade-color: #c14d8759;
+}
+
+@font-face {
+    font-family: AdobeGurmukhi;
+    src: url('AdobeGurmukhi-Bold.otf');
+}
+
+@font-face {
+    font-family: ArnoPro-SmbdSmText;
+    src: url('ArnoPro-SmbdSmText.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 70vmin;
+    margin-top: 25vmin;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container .child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 0.5px solid var(--main-color);
+    box-shadow: 0 0 10px var(--shade-color);
+    border-radius: 5px;
+}
+
+.container .child .main-heading {
+    display: flex;
+    align-items: center;
+    height: 8vmin;
+    width: 100%;
+    position: relative;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.container .child .main-heading:hover {
+    background: var(--light-shade-color);
+}
+
+.container .child .main-heading .heading-num {
+    font: bold 20px ms sans serif;
+    padding: 0 10px;
+}
+
+.container .child .main-heading h3 {
+    font: bold 20px adobegurmukhi;
+}
+
+.container .child .main-heading .plus {
+    right: 23px;
+    position: absolute;
+}
+
+.container .child .main-heading .multiple {
+    right: 23px;
+    position: absolute;
+    transform: rotate(45deg);
+    color: var(--shade-color);
+}
+
+.container .child .main-content {
+    margin-left: 40px;
+    font-family: ArnoPro-SmbdSmText;
+    padding: 10px;
+    color: var(--shade-color);
+}
+
+.container .child .main-content ul {
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Project completed */

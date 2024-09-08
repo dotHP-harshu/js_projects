@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Created by - Harsh Prajapati -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form | Harsh Prajapati</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form>
+        <div class="wrapper">
+            <div class="page">
+                <label for="name">Your Name:</label>
+                <input type="text" name="your name" id="name" placeholder="Enter your name.." class="required" />
+                <label for="surname">Your Surname:</label>
+                <input type="text" name="your surname" id="surname" placeholder="Enter your surname.." />
+            </div>
+
+            <div class="page">
+                <label for="email">Your Email:</label>
+                <input type="email" name="your email" id="email" placeholder="Enter your email.." class="required" />
+                <label for="password">Your Password:</label>
+                <input type="password" name="your Password" id="password" class="required" />
+            </div>
+
+            <div class="page">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="your dob" id="dob" class="required" />
+                <label for="phone">Phone No.:</label>
+                <input type="number" name="your phone no. " id="phone" placeholder="Enter your number"
+                    class="required" />
+            </div>
+
+            <div class="submit-page">
+                <h1>Thanks for submitting form........</h1>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button type="button" id="prev">Prev</button>
+            <button type="button" id="next">Next</button>
+            <button type="button" id="submit">Submit</button>
+            <button type="button" id="show-data">Show data</button>
+
+        </div>
+    </form>
+
+    <div class="data">
+        <table>
+            <tr>
+                <td>Full Name:</td>
+                <td id="data-name">Harsh Prajapati</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td id="data-email">harsh@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td id="data-password">harsh7380 35</td>
+            </tr>
+            <tr>
+                <td>Phone No.:</td>
+                <td id="data-phone">123456789</td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td id="data-dob">12/09/2006</td>
+            </tr>
+            <tr>
+                <td id="delete">Delete</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

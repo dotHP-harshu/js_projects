@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em;
+    user-select: none;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.page {
+    height: 16em;
+    width: 80vmin;
+    box-shadow: 0 0 10px gray;
+    padding: 2em;
+}
+
+.submit-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 12em;
+    width: 65vmin;
+    box-shadow: 0 0 10px gray;
+    padding: 2em;
+    background-color: white;
+    font-family: arial;
+}
+
+.page h1 {
+    font-family: ms sans serif;
+    font-weight: bold;
+    line-height: 100%;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    height: 3em;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 7px 15px;
+    border: none;
+    background-color: #ab1416;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: ms sans serif;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+button:disabled {
+    background-color: #a14c4e;
+}
+
+#prev {
+    left: 25%;
+}
+
+#next {
+    left: 75%;
+}
+
+#submit {
+    display: none;
+    left: 75%;
+}
+
+#show-data {
+    display: none;
+    left: 25%;
+}
+
+label {
+    display: block;
+    width: 100%;
+    font: 17px ms sans serif;
+    font-weight: 800;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 5px 15px;
+    margin: 12px 0;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid black;
+    transition: all 0.5s;
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 5px 15px;
+    margin: 12px 0;
+}
+
+#agreement {
+    display: inline;
+    width: auto;
+}
+
+select:focus,
+input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid brown;
+}
+
+.data {
+    position: absolute;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(209, 209, 209);
+    padding: 2em;
+}
+
+
+/* Style the table */
+
+.data table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style table cells */
+
+.data table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+
+/* Zebra stripe rows */
+
+.data table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* Add some spacing and border to the table */
+
+.data table {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* Center text in the table */
+
+.data table td {
+    text-align: left;
+}
+
+
+/* Style the container div */
+
+.data {
+    display: none;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#delete {
+    background-color: gray;
+    color: white;
+    cursor: pointer
+}

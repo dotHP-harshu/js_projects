@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2em;
+}
+#btn{
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(158, 51, 219);
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+#btn i{
+  font-size: 20px;
+  
+}
+
+.light {
+  background: white;
+  color: black;
+}
+
+.dark {
+  background: rgb(36, 36, 36);
+  color: white;
+}
+
+.massege {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

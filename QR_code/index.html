@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Created by -- Harsh Prajapati -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>Make your own QR Code</header>
+    <div class="wrapper">
+        <section id="input-section">
+            <form>
+                <label for="data">Your text or link :</label><br>
+                <input type="text" id="data" value="hello world"><br>
+                <label for="size">Size of image(px)</label>
+                <input type="number" id="size" value="200" min="10" max="1000"><br>
+                <label for="margin">Margin(px):</label>
+                <input type="number" id="margin" value="1" min="0" max="50"><br>
+                <label for="color">Foreground color :</label>
+                <input type="color" id="color" value="#ffffff"><br>
+                <label for="bgcolor">Background color :</label>
+                <input type="color" id="bgcolor" value="#000000"><br>
+                <label for="format">Format :</label>
+
+                <select id="format">
+                    <option value="png" selected>PNG</option>
+                    <option value="jpg">JPG</option>
+                    <option value="jepg">JPEG</option>
+                    <option value="gif">GIF</option>
+                    <option value="sbg">SVG</option>
+                    <option value="eps">EPS</option>
+                </select><br>
+                <button id="generate">Generate</button>
+            </form>
+        </section>
+        <hr>
+        <section id="qr-section">
+            <div class="img-wrapper">
+                <img src="Gear.gif" alt="loader" id="loader" height="100px" width="100px">
+                <img src="download.png" alt="image" id="qr-image">
+                <p id="err-msg"> * Error</p>
+            </div>
+            <a id="download">
+                <button class="button" type="button">
+                    <span class="button__text">Download</span>
+                    <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
+                            id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
+                            <path
+                                d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z">
+                            </path>
+                            <path
+                                d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z">
+                            </path>
+                            <path
+                                d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z">
+                            </path>
+                        </svg></span>
+                </button>
+            </a>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

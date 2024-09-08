@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Created by - Harsh Prajapati -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator | Harsh Prajapati</title>
+
+    <!-- CSS links-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head-container">
+        <h1>Password Generator</h1>
+      </div>
+      <div class="pass-detail">
+        <label for="length">Password length :</label>
+        <input type="number" name="Pass-length" id="length" /><br />
+        <input type="checkbox" name="uppercase" id="uppercase" />
+        <label for="uppercase">Include uppercase</label><br />
+        <input type="checkbox" name="lowercase" id="lowercase" />
+        <label for="lowercase">Include lowercase</label><br />
+        <input type="checkbox" name="number" id="number" />
+        <label for="number">Include number</label><br />
+        <input type="checkbox" name="symbol" id="symbol" />
+        <label for="symbol">Include symbol</label><br />
+      </div>
+      <button class="gen-btn">Generate</button>
+      <di class="pass-container">
+        <p class="password"></p>
+      </di>
+    </div>
+
+    <!-- JS links -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

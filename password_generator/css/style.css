@@ -1,0 +1,58 @@
+@font-face {
+  font-family: main-font;
+  src: url(../fonts/LemonMilk.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px gray;
+  gap: 20px;
+}
+
+.head-container h1 {
+  font-family: main-font;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  text-align: center;
+}
+
+.pass-detail label {
+  font-family: ms sans serif;
+  line-height: 25px;
+}
+
+.gen-btn {
+  padding: 5px 15px;
+  font-size: 17px;
+  background-color: rgb(33, 33, 214);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.password {
+  font-size: 16px;
+  font-family: main-font;
+}

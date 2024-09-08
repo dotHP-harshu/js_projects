@@ -1,0 +1,104 @@
+@font-face {
+    font-family: BlackOpsOne;
+    src: url('BlackOpsOne-Regular.ttf');
+}
+
+:root {
+    --box-color: #4015BF;
+    --main-color: #260D73;
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.game-header {
+    height: 5vmin;
+    text-align: center;
+}
+
+.game-header-heading {
+    font-family: BlackOpsOne;
+    color: var(--main-color);
+}
+
+#new-btn {
+    margin: 5vmin 0;
+    padding: 5px 8px;
+    font: bold 1rem ms sans serif;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--main-color);
+    background-color: #AF9DE4;
+}
+
+#new-btn:active {
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+.game-area {
+    text-align: center;
+    height: 33vmin;
+    width: 33vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vmin;
+    align-items: center;
+    justify-content: center;
+    margin: 5vmin auto;
+}
+
+.box {
+    height: 10vmin;
+    width: 10vmin;
+    background-color: var(--box-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 2.5rem;
+    /* margin-top: 5vmin;
+    margin-left: 5vmin; */
+}
+
+.hide {
+    display: none;
+}
+
+#msg {
+    color: var(--main-color);
+    font: bold 1.3rem ms sans serif;
+}
+
+#reset-btn {
+    margin: 5vmin 0;
+    padding: 5px 8px;
+    font: bold 1rem ms sans serif;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+#reset-btn:active {
+    background-color: var(--white);
+    color: var(--main-color);
+}
+
+
+
+/* Project completed */

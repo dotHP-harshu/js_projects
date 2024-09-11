@@ -1,0 +1,248 @@
+@font-face {
+    font-family: header_font;
+    src: url(FutureTimeSplitters.otf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFF5E5;
+}
+
+/* Header starts here  */
+header {
+    width: 100%;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+header h1 {
+    text-align: center;
+    font-family: header_font;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-weight: 900;
+    color: #975C01;
+}
+
+header img {
+    width: 2rem;
+}
+
+/* Header ends here  */
+
+/* Before game page starts here  */
+#before-game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*when clicked or click out*/
+}
+
+#start-btn,
+#home-btn {
+    font-size: 1.5rem;
+    color: #975C01;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #975C01;
+    box-shadow: 3px 3px #975C01;
+    cursor: pointer;
+    margin: 35px 0;
+    user-select: none;
+}
+
+#start-btn:active,
+#home-btn:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+/* Before game page ends here  */
+/* During game page starts here  */
+#during-game {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.game-data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 1em 0;
+}
+
+.game-data div {
+    font-size: 1.5rem;
+    font-family: cursive;
+    color: #975C01;
+}
+
+.game-area {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.emoji-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FEE9C9;
+    box-shadow: 5px 5px #E5C89C;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.emoji {
+    width: 40px;
+    position: absolute;
+    user-select: none;
+}
+
+/* During game page ends here  */
+
+/* Time up msg starts here  */
+#time-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    gap: 1em;
+    background-color: #fff5e5a1;
+    display: none;
+    /*after one second */
+}
+
+#time-up p {
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    color: #975C01;
+}
+
+#time-up img {
+    width: 2rem;
+}
+
+/* Time up msg ends here  */
+
+/* Result starts here  */
+#result {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFF5E5;
+    display: none;
+}
+
+.result-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.result-container h2 {
+    font-family: Arial;
+    color: #975C01;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.result-container p {
+    color: #975C01;
+    font-family: cursive;
+}
+
+/* Result ends here  */
+
+
+/* For Mobile  */
+@media (max-width:425px) {
+    .game-data {
+        gap: 3em;
+    }
+
+    .game-data div {
+        font-size: 1rem;
+    }
+}
+
+
+/* Preloaders Code */
+#preloader {
+    background-color: #FFF5E5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+    background: radial-gradient(circle closest-side, #975C01 94%, #975b0100) right/calc(200% - 1em) 100%;
+    animation: l24 1s infinite alternate linear;
+}
+
+.loader::before {
+    content: "Loading...";
+    line-height: 1em;
+    color: #0000;
+    background: inherit;
+    background-image: radial-gradient(circle closest-side, #FFF5E5 94%, #975C01);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes l24 {
+    100% {
+        background-position: left
+    }
+}
+
+/* Preloaders Code */

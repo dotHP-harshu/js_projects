@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Created by -- Harsh Prajapati -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Emoji Catcher</title>
+    <link rel="shortcut icon" href="emoji.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loader starts here  -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Loader ends here  -->
+    <!-- Header starts here  -->
+    <header>
+        <h1>Emoji Catcher</h1>
+        <img src="emoji.png" alt="logo">
+    </header>
+    <!-- Header ends here  -->
+
+    <!-- Before Game starts here  -->
+    <div id="before-game">
+        <button id="start-btn">Start Game</button>
+    </div>
+    <!-- Before Game ends here  -->
+
+    <!-- During Game starts here  -->
+    <div id="during-game">
+        <div class="game-data">
+            <div id="time">Time : 00 : 00</div>
+            <div id="score">Score : 00</div>
+        </div>
+        <div class="game-area">
+            <div class="emoji-container">
+            </div>
+        </div>
+    </div>
+    <!-- During Game ends here  -->
+
+    <div id="time-up">
+        <img src="emoji.png" alt="emoji">
+        <p>Time up</p>
+        <img src="emoji.png" alt="emoji">
+    </div>
+
+    <div id="result">
+        <div class="result-container">
+            <h2>Result</h2>
+            <p id="result-total">Total Emojies : 00</p>
+            <p id="result-score">Score : 00</p>
+        </div>
+        <button id="home-btn">Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

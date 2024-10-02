@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.dropover {
+    border: 2px dotted black;
+    opacity: 0.5;
+    background-color: gray;
+}
+
+.fill {
+    height: 100%;
+    width: 100%;
+    background: url('js_image.png') no-repeat center center/cover;
+    background-size: 200px;
+}

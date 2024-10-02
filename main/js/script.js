@@ -1,3 +1,13 @@
+// script to remove preloader
+
+const preloader = document.getElementById('preloader');
+
+window.addEventListener('load', () => {
+    preloader.style.display = ' none';
+})
+
+
+
 // script for goto sections
 const startBtn = document.getElementById('start-btn');
 const projectSection = document.getElementById('projects')

@@ -1,0 +1,53 @@
+/* Main adjustment */
+main {
+    height: auto;
+}
+
+header img {
+    width: 40vw;
+}
+
+#main-content h1 {
+    font-size: 3rem;
+}
+
+#main-content p {
+    font-size: 1.25rem;
+}
+
+/* Main adjustment */
+/* Project section adjustment */
+
+#projects {
+    padding: 3rem 0;
+}
+
+#projects h1 {
+    font-size: 2rem;
+}
+
+#load-btn {
+    height: 35px;
+}
+
+/* Project section adjustment */
+/* Card  adjustment */
+.cards {
+    width: 325px;
+    height: 192px;
+}
+
+.card-content h3 {
+    font-size: 6.5vw;
+}
+
+.card-content p {
+    font-size: 3vw;
+}
+
+/* Card  adjustment */
+
+
+.pop-up-btn {
+    margin: 1em;
+}

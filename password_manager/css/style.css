@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 80%;
+}
+
+.wrapper h1 {
+    text-align: center;
+}
+
+.input-area {
+    width: 100%;
+    padding: 10px;
+}
+
+.input-area input {
+    display: block;
+    width: 45%;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+#submit {
+    padding: 10px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-color: rgb(93, 93, 93);
+    color: white;
+}
+
+.pass-storage {
+    width: 100%;
+    margin: 20px;
+}
+
+table {
+    width: 80%;
+    border: 1px solid black;
+    font-size: 14px;
+    font-family: ms sans serif;
+    margin: auto;
+}
+
+thead {
+    border-color: black;
+}
+
+thead tr td {
+    padding: 10px 12px;
+    color: black;
+    background-color: gray;
+}
+
+tbody tr td {
+    padding: 10px 12px;
+}
+
+tbody tr td:nth-child(even) {
+    background-color: rgb(212, 212, 212);
+}
+
+tbody tr td:nth-child(odd) {
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: black;
+    color: white;
+}

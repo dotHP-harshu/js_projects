@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Crated by : Harsh Prajapati  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense tracker | Harsh Prajapati</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Expense Tracker</h1>
+      <div id="item-name">
+        <label for="name">Item Name</label>
+        <input type="text" id="name" placeholder="Enter item name" />
+      </div>
+
+      <div id="item-amount">
+        <label for="amount">Item Amount</label>
+        <input type="number" id="amount" placeholder="Enter item amount" />
+      </div>
+
+      <div id="btn-container">
+        <button id="add">Add item</button>
+        <button id="clear">Clear All</button>
+      </div>
+
+      <div id="expense">
+        <h2>0.00</h2>
+      </div>
+      <ul id="item-list"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

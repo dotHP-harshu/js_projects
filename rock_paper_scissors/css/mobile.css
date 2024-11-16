@@ -1,0 +1,116 @@
+body {
+    padding: 1.5em;
+}
+
+header {
+    width: 100%;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo img {
+    width: 50%;
+}
+
+#score {
+    padding: 12px;
+    gap: 10px;
+}
+
+#score p {
+    font-size: 12px
+}
+
+/* Rules section adjustment  */
+#rules {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.rules-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#close {
+    position: static;
+}
+
+/* Rules section adjustment  */
+/* ---------------------------------------------------------------------------- */
+/* Play area section adjustment  */
+
+.choices {
+    height: 250px;
+}
+
+.choice {
+    border-width: 0.5em;
+    height: 80px;
+    width: 80px;
+}
+
+
+#paper {
+    top: 52px;
+    right: -19px;
+}
+
+#scissors {
+    top: 196px;
+    right: 18px;
+}
+
+#lizard {
+    top: 196px;
+    left: 18px;
+}
+
+#spock {
+    top: 52px;
+    right: -19px;
+}
+
+/* Play area section adjustment  */
+/* ---------------------------------------------------------------------------- */
+/* Result section adjustment  */
+#result {
+    align-items: flex-start;
+}
+
+.user-result,
+.cpu-result {
+    height: auto;
+    padding: 0;
+}
+
+.user-result img,
+.cpu-result img {
+    height: 100px;
+    width: 100px;
+    border-width: 0.5em;
+}
+
+.result-msg {
+    transform: translate(-50%, 30%);
+}
+
+
+/* Result section adjustment  */
+/* ---------------------------------------------------------------------------- */
+#rules-btn {
+    position: static;
+}
+
+.admin-msg {
+    position: static;
+}

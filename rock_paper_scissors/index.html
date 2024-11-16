@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Created by Harsh Prajapati -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:550px)">
+</head>
+
+<body>
+    <!-- -------------------------- Rules Section Starts here  ------------------------- -->
+    <div id="rules">
+        <div class="rules-wrapper">
+            <img src="images/icon-close.svg" alt="closeIcon" id="close" onclick="closeRules()">
+            <h2>rules</h2>
+            <img class="rules-img" src="images/image-rules-bonus.svg" alt="rules">
+        </div>
+    </div>
+    <!-- -------------------------- Rules Section ends here  ------------------------- -->
+
+    <!-- -------------------------- Header Section starts here  ------------------------- -->
+    <header>
+        <div class="logo"><img src="images/logo-bonus.svg" alt="lof"></div>
+        <div id="score">
+            <p>score</p>
+            <h1>0</h1>
+        </div>
+    </header>
+    <!-- -------------------------- Header Section ends here  ------------------------- -->
+
+    <!-- -------------------------- Result Section starts here  ------------------------- -->
+    <div id="result">
+        <div class="user-result">
+            <h3>Your Picked</h3>
+            <img src="images/icon-lizard.svg" alt="user_result">
+        </div>
+        <div class="cpu-result">
+            <h3>CPU Picked</h3>
+            <img src="images/icon-scissors.svg" alt="cpu_result">
+        </div>
+        <div class="result-msg">
+            <p>You won</p>
+            <button id="play-btn" onclick="playAgain()">play again</button>
+        </div>
+    </div>
+    <!-- -------------------------- Result Section ends here  ------------------------- -->
+    <!-- -------------------------- Play Section starts here  ------------------------- -->
+
+    <div id="play-area">
+        <div class="choices">
+            <img src="images/bg-pentagon.svg" class="bg-img" alt="bg">
+            <img class="choice" src="images/icon-rock.svg" alt="Rock" id="rock">
+            <img class="choice" src="images/icon-paper.svg" alt="Paper" id="paper">
+            <img class="choice" src="images/icon-scissors.svg" alt="scissors" id="scissors">
+            <img class="choice" src="images/icon-lizard.svg" alt="lizard" id="lizard">
+            <img class="choice" src="images/icon-spock.svg" alt="Spock" id="spock">
+        </div>
+    </div>
+    <!-- -------------------------- Play Section ends here  ------------------------- -->
+    <button id="rules-btn" onclick="showRules()">rules</button>
+    <p class="admin-msg">with ❤️ from DotHP❗</p>
+
+    <!-- Script  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html

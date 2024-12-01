@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Created by Harsh Prajapati -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked list structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="help">
+        <p>Press <b>ctrl+shift+i</b> to open console tab.</p>
+        <p>Use console tab as code editor and run functions for operations.</p>
+        <h4>Functions:</h4>
+        <ul>
+            <li><b>i_beg(value) </b> : insert given value at the beginning of the head.</li>
+            <li><b>i_end(value) </b> : insert given value at the end of the head.</li>
+            <li><b>i_pos(position, value) </b> : insert given value at the given position in the list.</li>
+            <li><b>r_pos(position) </b> : remove element by given position in the list.</li>
+            <li><b>r_val(value) </b> : remove firs element by given value in the list.</li>
+        </ul>
+        <div id="close" onclick="show_help()"><img src="x-mark.png" alt="close" height="50px" width="50px"></div>
+        <p class="links">Want code and algorithms for linked list, <a href="gihub.🛰" target="_harsh">click here.</a>
+        </p>
+        <p class="links">Want source code, <a href="gihub.🛰" target="_harsh">click here.</a></p>
+    </div>
+
+    <div id="wrapper">
+        <p>Linked list</p>
+        <div class="node_container">
+
+            <div class="node" id="null_node">
+                <p class="node_value">NULL</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="msg">
+    </div>
+
+    <button id="help_btn" onclick="show_help()">Help</button>
+    <p id="admin_msg">with ❤️ from DotHP </p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

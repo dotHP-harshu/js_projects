@@ -10,27 +10,36 @@
 </head>
 
 <body>
+    <!-- -------- Help Section ------ -->
     <div id="help">
         <p>Press <b>ctrl+shift+i</b> to open console tab.</p>
         <p>Use console tab as code editor and run functions for operations.</p>
         <h4>Functions:</h4>
         <ul>
-            <li><b>i_beg(value) </b> : insert given value at the beginning of the head.</li>
-            <li><b>i_end(value) </b> : insert given value at the end of the head.</li>
-            <li><b>i_pos(position, value) </b> : insert given value at the given position in the list.</li>
-            <li><b>r_pos(position) </b> : remove element by given position in the list.</li>
-            <li><b>r_val(value) </b> : remove firs element by given value in the list.</li>
+            <li><b>iBeg(value) </b> : insert given value at the beginning of the head.</li>
+            <li><b>iEnd(value) </b> : insert given value at the end of the head.</li>
+            <li><b>iPos(position, value) </b> : insert given value at the given position in the list.</li>
+            <li><b>rBeg() </b> : remove the element at the beginning of list. </li>
+            <li><b>rEnd() </b> : remove the element at the end of list. </li>
+            <li><b>rPos(position) </b> : remove element by given position in the list.</li>
+            <li><b>rVal(value) </b> : remove firs element by given value in the list.</li>
+            <li><b>rBeg() </b> : remove the element from beginning in the list.</li>
+            <li><b>rEnd() </b> : remove the element from end in the list.</li>
+            <li><b>traverse() </b> : visit all elements in the list.</li>
         </ul>
-        <div id="close" onclick="show_help()"><img src="x-mark.png" alt="close" height="25px" width="25px"></div>
+        <button id="close" onclick="show_help()"><img src="assets/img/x-mark.png" alt="close" height="25px"
+                width="25px"></button>
         <p class="links">Want code and algorithms for linked list, <a
                 href="https://github.com/dotHP-harshu/DSA/tree/main/Linked_list/" target="_harsh">click here.</a>
         </p>
+
         <p class="links">Want source code, <a href="https://github.com/dotHP-harshu/js_projects/tree/main/linked_list"
                 target="_harsh">click here.</a></p>
     </div>
-
-    <div id="wrapper">
-        <p>Linked list</p>
+    <!-- -------- Help Section ------ -->
+    <!-- ------------ node wrapper -------------- -->
+    <main>
+        <h3>Linked list</h3>
         <div class="node_container">
 
             <div class="node" id="null_node">
@@ -38,12 +47,28 @@
             </div>
 
         </div>
+    </main>
+    <!-- ------------ main node wrapper -------------- -->
+    <!-- ------------------ function input ------------------- -->
+    <div id="input-section">
+        <input type="text" id="func-input" autofocus>
+        <button id="run">
+            <img src="assets/img/send-icon.png" alt="run">
+        </button>
     </div>
+    <!-- ------------------ function input ------------------- -->
+    <!-- ------------- input box ------------ -->
+    <!-- ------------- input box ------------ -->
+    <!-- ----------- message section --------------  -->
     <div class="msg">
     </div>
-
+    <!-- ----------- message section --------------  -->
+    <!-- --------------- buttons ---------------- -->
     <button id="help_btn" onclick="show_help()">Help</button>
-    <p id="admin_msg">with ❤️ from DotHP </p>
+    <!-- --------------- buttons ---------------- -->
+    <!-- --------------- admin message ---------------- -->
+    <footer id="admin_msg">with ❤️ from DotHP </footer>
+    <!-- --------------- admin message ---------------- -->
 
     <script src="script.js"></script>
 </body>

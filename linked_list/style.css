@@ -6,13 +6,16 @@
 
 body {
     height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
 }
 
-#wrapper p {
+main h3 {
     font-family: ms sans serif;
     margin-bottom: 10px;
 }
@@ -21,9 +24,9 @@ body {
     border: 1px solid black;
     padding: 20px;
     display: flex;
-    flex-wrap: nowrap;
-    width: fit-content;
     font-family: arial;
+    max-width: 80vw;
+    overflow: auto;
 }
 
 .node {
@@ -53,7 +56,7 @@ body {
 }
 
 .head {
-    background-color: rgb(41, 41, 41);
+    background-color: #003DD9;
     color: white;
 }
 
@@ -66,20 +69,19 @@ body {
 
 
 .msg {
+    display: inline-block;
     position: absolute;
     top: 5%;
     left: 5%;
-    width: 100%;
 }
 
 .msg p {
-    position: absolute;
     padding: 5px 10px;
     border-radius: 5px;
     color: white;
     font-family: ms sans serif;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .error {
@@ -99,7 +101,8 @@ body {
     border: 1px solid gray;
     padding: 50px 60px;
     font-family: arial;
-    z-index: 400;
+    z-index: 10;
+    display: none;
 }
 
 #help p {
@@ -112,6 +115,9 @@ body {
 
 #close {
     position: absolute;
+    border: none;
+    background-color: #fff;
+    display: inline-block;
     top: 5px;
     right: 5px;
     cursor: pointer;
@@ -119,7 +125,7 @@ body {
 
 #help_btn {
     position: absolute;
-    top: 5%;
+    top: 2%;
     right: 5%;
     padding: 10px 20px;
     background-color: white;
@@ -146,4 +152,100 @@ body {
     transform: translateX(-50%);
     font-family: sans-serif;
     font-size: 10px;
+}
+
+b {
+    background-color: yellow;
+}
+
+.traverse {
+    background-color: #D94800;
+    transition: all 0.3s;
+}
+
+/* ---------- input section -------------- */
+#input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#func-input {
+    padding: 5px 20px;
+    outline: none;
+    border-radius: 200px;
+    border: none;
+    background-color: #b9b9b9;
+    height: 50px;
+    width: 300px;
+}
+
+#run {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b9b9b9;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 15px;
+}
+
+#run img {
+    width: 100%;
+}
+
+/* ---------- input section -------------- */
+
+@media (max-width:425px) {
+    body {
+        font-size: 12px;
+    }
+
+    #help {
+        max-width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        padding: 25px;
+    }
+
+    .node {
+        height: 30px;
+        width: 45px;
+        border-radius: 6px;
+        margin-right: 20px;
+    }
+
+    .node_img {
+        width: 25px;
+        transform: translate(-5px, -50%);
+    }
+
+    #input-section {
+        gap: 5px;
+    }
+
+    #func-input {
+        height: 30px;
+        width: 200px;
+    }
+
+    #run {
+        height: 30px;
+        width: 30px;
+        padding: 8px;
+    }
+
+    .msg {
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 }

@@ -6,14 +6,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linked list structure</title>
+    <link rel="manifest" href="manifest.json">
+
     <link rel="stylesheet" href="style.css">
+    <!-- Add service worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(() => console.log('Service Worker Registered!'))
+                .catch((error) => console.log('Service Worker Registration Failed:', error));
+        }
+    </script>
 </head>
 
 <body>
     <!-- -------- Help Section ------ -->
     <div id="help">
-        <p>Press <b>ctrl+shift+i</b> to open console tab.</p>
-        <p>Use console tab as code editor and run functions for operations.</p>
+        <p>1.Type below function in input box for performing operations.</p>
+        <p>2.Then hit enter or click on run btn.</p>
         <h4>Functions:</h4>
         <ul>
             <li><b>iBeg(value) </b> : insert given value at the beginning of the head.</li>
@@ -69,6 +79,13 @@
     <!-- --------------- admin message ---------------- -->
     <footer id="admin_msg">with ❤️ from DotHP </footer>
     <!-- --------------- admin message ---------------- -->
+
+    <!-- ------ Installation request --------------- -->
+    <div id="installation_panel">
+        <p>Now, you can intall its app for better experience.</p>
+        <button id="installButton">Install</button>
+    </div>
+    <!-- ------ Installation request --------------- -->
 
     <script src="script.js"></script>
 </body>

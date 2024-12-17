@@ -1,0 +1,21 @@
+{
+    "name": "My Linked list app",
+    "short_name": "myLL",
+    "description": "A simple Progressive Web App (PWA) that works offline and can be installed.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0d6efd",
+    "icons": [
+        {
+            "src": "icons/ds.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icons/ds.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

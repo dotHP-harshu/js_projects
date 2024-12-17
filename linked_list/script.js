@@ -229,8 +229,25 @@ document.getElementById('func-input').addEventListener("keyup", (e) => {
     }
 })
 
-iBeg(90)
-iBeg(90)
-iBeg(90)
-iBeg(90)
-iBeg(90)
+
+
+
+let deferredPrompt;
+const installButton = document.getElementById('installButton');
+
+// Listen for the beforeinstallprompt event
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installButton.style.display = 'block';
+
+    installButton.addEventListener('click', () => {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the install prompt');
+            }
+            deferredPrompt = null;
+        });
+    });
+});

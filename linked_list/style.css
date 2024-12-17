@@ -13,20 +13,26 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     flex-direction: column;
+    background-color: #fef8e4;
+    color: #333333;
 }
 
 main h3 {
     font-family: ms sans serif;
     margin-bottom: 10px;
+    color: #D85D5D;
 }
 
 .node_container {
-    border: 1px solid black;
     padding: 20px;
     display: flex;
     font-family: arial;
     max-width: 80vw;
     overflow: auto;
+    border: 1px solid #FF6F61;
+    background-color: #ffe5e5;
+    box-shadow: 0 2px 10px #FF6F61;
+
 }
 
 .node {
@@ -35,9 +41,11 @@ main h3 {
     border-radius: 10px;
     display: inline-block;
     flex-shrink: 0;
-    background-color: rgb(174, 174, 174);
+    border: 1px solid #D85D5D;
+    color: #D85D5D;
     margin-right: 50px;
     position: relative;
+    background-color: #ffd5d2;
 }
 
 .node_img {
@@ -56,14 +64,14 @@ main h3 {
 }
 
 .head {
-    background-color: #003DD9;
+    background-color: #ff704d;
     color: white;
 }
 
 #null_node {
-    border: 1px solid blue;
-    color: blue;
-    background-color: white;
+    border: 1px solid #ff5722;
+    color: #D85D5D;
+    background-color: #ffefef;
     margin: 0;
 }
 
@@ -85,11 +93,11 @@ main h3 {
 }
 
 .error {
-    background-color: rgb(255, 80, 80);
+    background-color: #ff4f4f;
 }
 
 .success {
-    background-color: rgb(82, 237, 82);
+    background-color: #81c784;
 }
 
 #help {
@@ -97,12 +105,12 @@ main h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    border: 1px solid gray;
+    background-color: #FFEBE0;
+    border: 1px solid #FF6F61;
     padding: 50px 60px;
     font-family: arial;
     z-index: 10;
-    display: none;
+    width: 80vw;
 }
 
 #help p {
@@ -128,15 +136,17 @@ main h3 {
     top: 2%;
     right: 5%;
     padding: 10px 20px;
-    background-color: white;
-    border: 1px solid black;
+    background-color: #ff6f47;
     border-radius: 10px;
+    transition: all 0.5s;
+    border: 1px solid #D85D5D;
     cursor: pointer;
+    color: white;
+
 }
 
-#help_btn:active {
-    background-color: gray;
-    color: white;
+#help_btn:hover {
+    background-color: #ff4b33;
 }
 
 .links {
@@ -152,15 +162,17 @@ main h3 {
     transform: translateX(-50%);
     font-family: sans-serif;
     font-size: 10px;
+    color: #D85D5D;
 }
 
 b {
-    background-color: yellow;
+    background-color: #FFB3B3;
 }
 
 .traverse {
-    background-color: #D94800;
+    background-color: #D85D5D;
     transition: all 0.3s;
+
 }
 
 /* ---------- input section -------------- */
@@ -176,7 +188,8 @@ b {
     outline: none;
     border-radius: 200px;
     border: none;
-    background-color: #b9b9b9;
+    background-color: #FFD6D0;
+    box-shadow: 0 2px 10px #FF6F61;
     height: 50px;
     width: 300px;
 }
@@ -187,7 +200,8 @@ b {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b9b9b9;
+    box-shadow: 0 2px 10px #FF6F61;
+    background-color: #ffaea7;
     outline: none;
     border: none;
     border-radius: 50%;
@@ -200,6 +214,31 @@ b {
 }
 
 /* ---------- input section -------------- */
+/* ---------- installation panel-------------- */
+#installation_panel {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    font-size: 12px;
+    background-color: rgb(254, 201, 209);
+    align-items: center;
+    justify-content: center;
+
+}
+
+#installButton {
+    border: none;
+    background-color: #FF6F61;
+    color: white;
+    padding: 5px 10px;
+
+}
+
+/* ---------- installation panel-------------- */
 
 @media (max-width:425px) {
     body {
@@ -208,12 +247,15 @@ b {
 
     #help {
         max-width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        transform: translate(0);
+        width: 100vw;
+        height: auto;
         padding: 25px;
     }
+
+    #help_btn {
+        padding: 5px 10px
+    }
+
 
     .node {
         height: 30px;

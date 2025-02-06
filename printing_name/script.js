@@ -79,4 +79,5 @@ resetBtn.addEventListener('click', (e) => {
     textContainer.innerHTML = ''; // Clear previous text
     inputContainer.style.display = 'flex';
     textContainer.style.display = 'none';
+    lineNo = 1;
 });

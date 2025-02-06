@@ -93,8 +93,14 @@ body {
     word-spacing: 3px;
     animation: typing 0.5s;
     width: max-content;
+    font-size: 16px;
 }
 
+#text-container p span {
+    color: white;
+    display: inline-block;
+    width: 96px;
+}
 
 
 @keyframes typing {

@@ -3,13 +3,15 @@ const textContainer = document.getElementById('text-container');
 const inputContainer = document.getElementById('input-container');
 const inputText = document.getElementById('input-text');
 const resetBtn = document.getElementById('reset-btn');
+let lineNo = 1;
 
 // Function to create paragraphs
 const makeText = (text) => {
     let para = document.createElement('p');
-    para.innerText = text;
+    para.innerHTML = `<span>${lineNo}</span>${text}`;
     textContainer.appendChild(para);
     para.scrollIntoView({ behavior: "smooth", block: 'end' });
+lineNo ++;
 }
 
 // Typing animation function
@@ -35,7 +37,6 @@ async function type(text, s) {
 
             if (currentLetter === targetLetter) {
                 makingText += targetLetter;
-                makeText(makingText);
                 await new Promise(resolve => setTimeout(resolve, speed));
                 break;
             }

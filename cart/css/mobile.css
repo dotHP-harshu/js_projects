@@ -1,0 +1,16 @@
+#product-grid {
+    width: 100%;
+}
+
+.product-card {
+    width: 100%;
+}
+
+#cart {
+    position: static;
+    width: 100%;
+}
+
+#confirm-order {
+    font-size: 1rem;
+}

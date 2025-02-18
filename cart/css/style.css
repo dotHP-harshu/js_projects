@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+main {
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    background-color: var(--bg-color);
+}
+
+main {
+    position: relative;
+}
+
+:root {
+    --primary-color: #C83B0E;
+    --primary-color-hover: #952C0C;
+    --bg-color: #fbf1ea;
+}
+
+@font-face {
+    font-family: red-medium;
+    src: url('../assets/fonts/RedHatText-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: red-bold;
+    src: url('../assets/fonts/RedHatText-Bold.ttf');
+}
+
+
+@font-face {
+    font-family: red-regular;
+    src: url('../assets/fonts/RedHatText-Regular.ttf');
+}
+
+@media (max-width:1024px) {
+    #cart {
+        right: 0;
+    }
+}

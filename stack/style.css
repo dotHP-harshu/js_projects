@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: arial;
+}
+
+#stack-wrapper {
+    padding: 10px;
+}
+
+#stack-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.element {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+#top {
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+
+#input-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 0 10px gray;
+    background-color: white;
+    position: absolute;
+    z-index: 50;
+    height: 50vh;
+    width: 50vh;
+}
+
+#start-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: arial;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+
+/* help section  */
+#help {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid gray;
+    padding: 50px 60px;
+    font-family: arial;
+    z-index: 400;
+}
+
+#help p {
+    margin-bottom: 10px;
+}
+
+#help ul li {
+    padding: 10px 0;
+}
+
+#close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/* help section  */
+
+#help_btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#help_btn:active {
+    background-color: gray;
+    color: white;
+}
+
+.links {
+    font-family: ms sans serif;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+#admin_msg {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+/* for msg */
+.msg {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100%;
+}
+
+.msg p {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: ms sans serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.error {
+    background-color: rgb(255, 80, 80);
+}
+
+.success {
+    background-color: rgb(82, 237, 82);
+}
+
+/* for msg */

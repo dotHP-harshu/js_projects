@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Created by Harsh Prajapati -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack data structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="help">
+        <p>Press <b style="background-color: yellow;">ctrl+shift+i</b> to open console tab.</p>
+        <p>Use console tab as code editor and run functions for operations.</p>
+        <h4>Functions:</h4>
+        <ul>
+            <li><b style="background-color: yellow;">push(value)</b>: add a element of given value in stack.</li>
+            <li><b style="background-color: yellow;">pop()</b>: remove the top value.</li>
+        </ul>
+        <div id="close" onclick="show_help()"><img src="x-mark.png" alt="close" height="25px" width="25px"></div>
+        <p class="links">Want code and algorithms for Stack, <a
+                href="https://github.com/dotHP-harshu/DSA/tree/main/Stack/" target="_harsh">click here.</a>
+        </p>
+        <p class="links">Want source code, <a href="https://github.com/dotHP-harshu/js_projects/tree/main/Stack"
+                target="_harsh">click here.</a></p>
+    </div>
+    <div id="input-panel">
+        <label for="size">Size of stack:</label>
+        <input id="size" type="number" placeholder="1" min="1" max="10" autofocus>
+        <button id="start-btn">Start</button>
+    </div>
+    <div id="stack-wrapper">
+        <span>Stack</span>
+        <div id="stack-container">
+            <div class="element" id="top">
+            </div>
+        </div>
+    </div>
+    <div class="msg">
+    </div>
+
+    <button id="help_btn" onclick="show_help()">Help</button>
+    <p id="admin_msg">with ❤️ from DotHP </p>
+    <script src="script.js"></script>
+</body>
+
+</html>
